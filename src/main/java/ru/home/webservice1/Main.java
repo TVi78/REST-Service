@@ -9,26 +9,25 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) {
-        String query = ("SELECT s.id, s.name, c.coordinator_name FROM student AS s " +
-                "LEFT JOIN coordinator AS с ON s.coordinator_id=c.coordinator_id");
-        //Student student=new Student();
-        try (
-                Connection connection = Dbutils.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                int id = rs.getInt("s.id");
-                String name = rs.getString("s.name");
-                String coordinator_name = rs.getString("c.coordinator_name");
-//                int coordinator_id = rs.getInt("coordinator_id");
-                System.out.println(id+","+name+","+coordinator_name);
-                //courses.add(new Course(id, name));
-            }
-        } catch (
-                SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
+//    public static void main(String[] args) {
+//        String query = ("SELECT st.id, st.name, cd.coordinator_name FROM student AS st left join coordinator AS cd on st.coordinator_id = cd.coordinator_id;");
+//        //Student student=new Student();
+//        try (
+//                Connection connection = Dbutils.getConnection();
+//                PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+//            ResultSet rs = preparedStatement.executeQuery();
+//            while (rs.next()) {
+//                int id = rs.getInt("id");
+//                String name = rs.getString("name");
+//                String coordinator_name = rs.getString("coordinator_name");
+////                int coordinator_id = rs.getInt("coordinator_id");
+//                System.out.println(id+","+name+","+coordinator_name);
+//                //courses.add(new Course(id, name));
+//            }
+//        } catch (
+//                SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//    }
 
 }

@@ -17,6 +17,9 @@ public class CourseDaoJDBC implements CourseDao{
     private static String queryCourse = ("SELECT * FROM course ORDER BY id ASC");
     private static String queryCourseId = ("SELECT * FROM course WHERE id = ?");
 
+    public CourseDaoJDBC() {
+    }
+
 
     @Override
     public void addCourse(Course cource) {

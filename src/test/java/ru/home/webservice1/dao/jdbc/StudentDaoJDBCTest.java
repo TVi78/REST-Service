@@ -56,11 +56,7 @@ class StudentDaoJDBCTest {
 
     @org.junit.jupiter.api.Test
     void deleteStudent() {
-      //  studentDao.deleteStudent(23);
-        qw();
+      studentDao.deleteStudent(23);
     }
 
-    @Test
-    void qw() {
-    }
 }
