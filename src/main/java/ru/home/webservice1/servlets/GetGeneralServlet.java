@@ -14,16 +14,16 @@ import java.util.List;
 
 @WebServlet("/")
 public class GetGeneralServlet extends HttpServlet {
-    private StudentDaoJDBC userDAO;
+    private StudentDaoJDBC studentDAO;
 
     @Override
     public void init() throws ServletException {
-        userDAO = new StudentDaoJDBC();
+        studentDAO = new StudentDaoJDBC();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Student> listStudent = userDAO.getAllStudent();
+        List<Student> listStudent = studentDAO.getAllStudent();
         req.setAttribute("listStudent", listStudent);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/view/user-list.jsp");
         dispatcher.forward(req, resp);
