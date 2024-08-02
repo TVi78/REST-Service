@@ -31,6 +31,7 @@ public class CoordinatorDaoJDBC implements CoordinatorDao {
      */
     public CoordinatorDaoJDBC() {
         connectionProvider = new Dbutils();
+        createCoordinatorTableIfNotExists();
     }
 
     /**

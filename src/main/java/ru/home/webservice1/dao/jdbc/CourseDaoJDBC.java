@@ -31,6 +31,7 @@ public class CourseDaoJDBC implements CourseDao {
      */
     public CourseDaoJDBC() {
         connectionProvider = new Dbutils();
+        createCoursesTableIfNotExists();
     }
 
     /**
