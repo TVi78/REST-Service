@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.containers.PostgreSQLContainer;
 import ru.home.webservice1.dao.jdbc.StudentDaoJDBC;
-import ru.home.webservice1.model.Course;
 import ru.home.webservice1.utils.Dbutils;
 
 import java.sql.Connection;
@@ -163,9 +162,7 @@ class StudentCourseTest {
                 String name = rs.getString("name");
                 String course_name = rs.getString("course_name");
                 String coordinator_name = rs.getString("coordinator_name");
-//                int coordinator_id = rs.getInt("coordinator_id");
                 System.out.println(id + "," + name + "," + course_name + "," + coordinator_name);
-                //courses.add(new Course(id, name));
             }
         } catch (
                 SQLException throwables) {

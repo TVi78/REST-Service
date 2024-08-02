@@ -1,4 +1,6 @@
 1. Файл config.properties находится в директории "src/main/webapp/WEB-INF/classes/"
 2. Тесты, запускаемые Unit5 в директории "src/test/java/ru/home/webservice1/dao/jdbc"
 3. Тесты, запускаемые с testcontainers в директории "src/test/java/"
+4. Тесты сервлетов, запускаемые с testcontainers в директории "src/test/java/ru/home/webservice1/servlets"
 4. Комментарии javadoc на русском, при генерации файла в поле Command line arguments указать "-encoding utf8"
+5. Tomcat 9.0.91

@@ -4,9 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.containers.PostgreSQLContainer;
 import ru.home.webservice1.dao.jdbc.CoordinatorDaoJDBC;
-import ru.home.webservice1.dao.jdbc.CourseDaoJDBC;
 import ru.home.webservice1.model.Coordinator;
-import ru.home.webservice1.model.Course;
 import ru.home.webservice1.utils.Dbutils;
 
 import java.util.ArrayList;

@@ -61,6 +61,7 @@ public class CoordinatorDaoJDBC implements CoordinatorDao {
 
     /**
      * Добавляем координатора
+     *
      * @param coordinator
      * @see Coordinator
      */
@@ -78,6 +79,7 @@ public class CoordinatorDaoJDBC implements CoordinatorDao {
 
     /**
      * Получаем всех координаторов
+     *
      * @return список координаторов
      */
     @Override
@@ -123,6 +125,7 @@ public class CoordinatorDaoJDBC implements CoordinatorDao {
 
     /**
      * Обновляем координатора, полученного по id
+     *
      * @param coordinator координатор
      */
     @Override
@@ -140,6 +143,7 @@ public class CoordinatorDaoJDBC implements CoordinatorDao {
 
     /**
      * Удаляет координатора, полученного по id
+     *
      * @param id идентификатор координатора
      */
     @Override

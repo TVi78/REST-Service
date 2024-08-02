@@ -12,9 +12,6 @@ import java.util.Properties;
 
 @NoArgsConstructor
 public class Dbutils {
-//    private static String USER = "admin";
-//    private static String PASSWORD = "admin";
-//    private static String URL = "jdbc:postgresql://localhost:1500/db";
 
     private String URL;
     private String USER ;

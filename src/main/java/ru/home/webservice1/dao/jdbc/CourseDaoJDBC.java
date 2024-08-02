@@ -58,6 +58,7 @@ public class CourseDaoJDBC implements CourseDao {
 
     /**
      * Добавляем курс
+     *
      * @param course новый курс
      */
     @Override
@@ -74,6 +75,7 @@ public class CourseDaoJDBC implements CourseDao {
 
     /**
      * Получаем все курсы
+     *
      * @return список курсов
      */
     @Override
@@ -95,7 +97,8 @@ public class CourseDaoJDBC implements CourseDao {
 
     /**
      * Получаем курс по его id
-     * @param id  идентификатор
+     *
+     * @param id идентификатор
      * @return курс
      */
     @Override
@@ -119,6 +122,7 @@ public class CourseDaoJDBC implements CourseDao {
 
     /**
      * Обновляем курс, полученный по id
+     *
      * @param course курс
      */
     @Override
